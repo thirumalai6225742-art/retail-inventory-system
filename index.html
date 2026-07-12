@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Smart Retail Inventory System</title>
+    
+    <button onclick="logout()">
+
+    Logout
+
+</button>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>🛒 Smart Retail Inventory System</h1>
+
+    <div class="input-section">
+
+        <input
+        type="text"
+        id="name"
+        placeholder="Product Name">
+
+        <input
+        type="number"
+        id="price"
+        placeholder="Price">
+
+        <input
+        type="number"
+        id="stock"
+        placeholder="Stock">
+
+        <button
+        class="add-btn"
+        onclick="addProduct()">
+        Add Product
+        </button>
+
+    </div>
+
+    <input
+    class="search-box"
+    type="text"
+    id="search"
+    placeholder="🔍 Search Product"
+    onkeyup="searchProducts()">
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h3 id="totalProducts">
+                Total Products: 0
+            </h3>
+        </div>
+
+        <div class="card">
+            <h3 id="inventoryValue">
+                Inventory Value: ₹0
+            </h3>
+        </div>
+
+        <div class="card">
+            <h3 id="lowStockCount">
+                Low Stock: 0
+            </h3>
+        </div>
+
+        <div class="card">
+            <h3 id="totalRevenue">
+                Total Revenue: ₹0
+            </h3>
+        </div>
+
+        <div class="card">
+            <h3 id="totalSold">
+                Total Units Sold: 0
+            </h3>
+        </div>
+
+        <div class="card">
+            <h3 id="topProduct">
+                Top Product: None
+            </h3>
+        </div>
+
+    </div>
+
+    <table>
+
+        <thead>
+
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Sold</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="productTable">
+
+        </tbody>
+
+    </table>
+
+    <h2>📊 Sales Report</h2>
+
+    <div id="salesReport">
+
+        No Sales Yet
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

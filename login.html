@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+    <div class="login-box">
+
+        <h1>Retail Login</h1>
+
+        <input
+        type="text"
+        id="username"
+        placeholder="Username">
+
+        <input
+        type="password"
+        id="password"
+        placeholder="Password">
+
+        <button onclick="login()">
+
+            Login
+
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script>
+
+        function login(){
+
+            let username =
+            document.getElementById("username").value;
+
+            let password =
+            document.getElementById("password").value;
+
+            if(
+                username === "admin" &&
+                password === "1234"
+            ){
+
+                localStorage.setItem(
+                    "loggedIn",
+                    "true"
+                );
+
+                window.location.href =
+                "index.html";
+
+            }
+            else{
+
+                document.getElementById("message")
+                .innerHTML =
+                "Invalid Username or Password";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

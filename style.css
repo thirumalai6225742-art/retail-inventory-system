@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f4f6f9;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    color:#2c3e50;
+    margin-bottom:25px;
+}
+
+h2{
+    margin-top:25px;
+    color:#2c3e50;
+}
+
+.input-section{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+}
+
+input{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    margin:5px;
+    font-size:14px;
+}
+
+input:focus{
+    outline:none;
+    border-color:#3498db;
+}
+
+.search-box{
+    width:300px;
+    margin-bottom:20px;
+}
+
+button{
+    padding:10px 16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+.add-btn{
+    background:#27ae60;
+    color:white;
+}
+
+.edit-btn{
+    background:#3498db;
+    color:white;
+}
+
+.delete-btn{
+    background:#e74c3c;
+    color:white;
+}
+
+.sell-btn{
+    background:#f39c12;
+    color:white;
+}
+
+.dashboard{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.card{
+    flex:1;
+    min-width:220px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    border-left:5px solid #3498db;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    color:#2c3e50;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+th{
+    background:#34495e;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #eee;
+}
+
+tr:hover{
+    background:#f9f9f9;
+}
+
+.low-stock{
+    color:red;
+    font-weight:bold;
+}
+
+#salesReport{
+    margin-top:20px;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
